@@ -203,6 +203,8 @@ double Steck::evaluatePostfix(std::string str) {
 	std::stringstream ss(str);
 	ss >> str;
 	
+
+	return 1;
 }
 
 int main() 
@@ -237,6 +239,12 @@ int main()
 	st.top().printVals();
 	st.pop().printVals();
 	st.top().printVals();
+
+	std::cout <<"\n" << log(10000) << std::endl;
+	std::cout <<"\n" << log10(10000) << std::endl;
+
+
+
 	//реализация вычисления постфиксного выражения при помощи стека
 	std::string expression = "3 4 + 2 * 7 /";//3+4=7-> 7*2=14 ->14/7=2
 	double result = st.evaluatePostfix(expression);
